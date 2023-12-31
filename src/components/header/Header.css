@@ -1,5 +1,8 @@
 .header {
   height: 418px;
+  font-size: var(--fs-small);
+  text-align: center;
+  text-transform: capitalize;
 }
 .hero-section {
   height: 100%;
@@ -8,26 +11,78 @@
   justify-content: center;
   align-items: center;
   gap: 40px;
-  overflow: hidden;
 }
 
 .hero-tags-container {
+  max-width: fit-content;
   display: none;
   height: 32px;
-  border: 1px solid;
 }
 .hero-title {
-  font-family: "Neue Montreal Medium";
-  max-width: 700px;
+  font-family: "Neue Montreal Medium", serif;
   font-size: var(--fs-hero-title);
+  font-weight: 400;
+  letter-spacing: -0.2px;
   line-height: var(--hero-line-height);
-  text-align: center;
+  max-width: 700px;
+  /* No more changes please */
+}
+.hero-tag {
+  font-family: "Neue Montreal", serif;
+  letter-spacing: 0.6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-tag:not(:first-child) {
+  background-color: var(--clr-nav-bg);
+  box-shadow: var(--bs-2-dp);
+  padding: 0.5rem 0.75rem;
+  border-radius: 100px;
+}
+
+/* SNow ICOn Button */
+.btn {
+  padding: 1.4285em;
+  background: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sticky {
+  box-shadow: var(--bs-8-dp);
+  gap: 10px;
   text-transform: capitalize;
+  border-radius: 100px;
+  font-family: "Neue Montreal", serif;
+  height: 40px;
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.snow-icon {
+  width: 12px;
+  height: 12px;
+  stroke: #fff;
 }
 
 @media (min-width: 810px) {
   .hero-tags-container {
     display: flex;
     width: 100%;
+    gap: 10px;
+  }
+
+  .hero-title {
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-title {
+    max-width: 700px;
   }
 }

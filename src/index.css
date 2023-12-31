@@ -22,7 +22,7 @@
   --bs-8-dp: 0 4px 4px 0 rgba(0, 0, 0, 0.3), 0 8px 12px 3px rgba(0, 0, 0, 0.15);
 
   /* Font Size variable */
-  --fs-nav: 14px;
+  --fs-small: 14px;
   --fs-hero-title: 36px;
 
   --hero-line-height: 1.2em;
@@ -31,15 +31,18 @@
   --container-padding: 20px;
 }
 
+
+
 /* Font faces */
 @font-face {
   font-family: "Neue Montreal Medium";
-  src: url(./Neue+Montreal+Medium.ttf) format("truetype");
+  src: url("./assets/fonts/Neue-Montreal-Medium.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Neue Montreal";
-  src: url(./Neue+Montreal.ttf) format("truetype");
+
+  src: url("./assets/fonts/Neue-Montreal.ttf") format("truetype");
 }
 
 /* Resetting some element's default styles */
@@ -69,5 +72,11 @@ ul {
   }
   .container {
     padding: 30px 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --fs-hero-title: 70px;
   }
 }

@@ -17,7 +17,7 @@
 .nav-items {
   backdrop-filter: blur(10px);
   background-color: var(--clr-nav-bg);
-  box-shadow: var(--bs-4-dp);
+  box-shadow: var(--bs-8-dp);
   gap: 4px;
   height: 48px;
   max-width: 280px;
@@ -25,7 +25,7 @@
 }
 
 .nav-item a {
-  color: var(--clr-font);
+  color: var(--clr-small);
   height: 40px;
   width: 88px;
 }
