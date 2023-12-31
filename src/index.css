@@ -1,0 +1,73 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* For Variables */
+:root {
+  /* Color Variables */
+  --clr-primary-bg: #fff;
+  --clr-secondary-bg: #7f7f7f;
+  --clr-nav-bg: #e8e5e480;
+  --clr-font: #000000;
+
+  /* Box Shadows */
+  --bs-1-dp: 0 1px 2px 0 rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.15);
+  --bs-2-dp: 0 1px 2px 0 rgba(0, 0, 0, 0.3), 0 2px 6px 2px rgba(0, 0, 0, 0.15);
+  --bs-4-dp: 0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 4px 8px 3px rgba(0, 0, 0, 0.15);
+  --bs-6-dp: 0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 6px 10px 3px rgba(0, 0, 0, 0.15);
+  --bs-8-dp: 0 4px 4px 0 rgba(0, 0, 0, 0.3), 0 8px 12px 3px rgba(0, 0, 0, 0.15);
+
+  /* Font Size variable */
+  --fs-nav: 14px;
+  --fs-hero-title: 36px;
+
+  --hero-line-height: 1.2em;
+
+  /* Padding Variables */
+  --container-padding: 20px;
+}
+
+/* Font faces */
+@font-face {
+  font-family: "Neue Montreal Medium";
+  src: url(./Neue+Montreal+Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Neue Montreal";
+  src: url(./Neue+Montreal.ttf) format("truetype");
+}
+
+/* Resetting some element's default styles */
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+button {
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+ul {
+  list-style: none inside;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: var(--container-padding);
+}
+
+@media (min-width: 810px) {
+  :root {
+    --fs-hero-title: 48px;
+    --container-padding: 30px 40px;
+  }
+  .container {
+    padding: 30px 40px;
+  }
+}

@@ -6,4 +6,5 @@ Outcome from this project:
 - scroll animations
 - hover effect
 - css variables
+- applying DRY style in css
 - and more

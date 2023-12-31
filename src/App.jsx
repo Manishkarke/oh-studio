@@ -1,10 +1,16 @@
-import { useState } from "react";
-import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import AppRoutes from "./AppRoutes";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  return <>app is live</>;
+  return (
+    <>
+      <Routes>
+        {AppRoutes.map(({ element, ...rest }, index) => {
+          return <Route key={index} {...rest} element={element} />;
+        })}
+      </Routes>
+    </>
+  );
 }
 
 export default App;

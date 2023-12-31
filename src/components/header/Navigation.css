@@ -1,0 +1,35 @@
+.navigation,
+.nav-items,
+.nav-item,
+.nav-item a {
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation {
+  padding: var(--container-padding);
+  position: sticky;
+  top: 0;
+}
+
+.nav-items {
+  backdrop-filter: blur(10px);
+  background-color: var(--clr-nav-bg);
+  box-shadow: var(--bs-4-dp);
+  gap: 4px;
+  height: 48px;
+  max-width: 280px;
+  padding: 4px;
+}
+
+.nav-item a {
+  color: var(--clr-font);
+  height: 40px;
+  width: 88px;
+}
+
+.nav-item a.active {
+  background-color: var(--clr-primary-bg);
+}

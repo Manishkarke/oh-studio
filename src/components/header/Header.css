@@ -1,0 +1,33 @@
+.header {
+  height: 418px;
+}
+.hero-section {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  overflow: hidden;
+}
+
+.hero-tags-container {
+  display: none;
+  height: 32px;
+  border: 1px solid;
+}
+.hero-title {
+  font-family: "Neue Montreal Medium";
+  max-width: 700px;
+  font-size: var(--fs-hero-title);
+  line-height: var(--hero-line-height);
+  text-align: center;
+  text-transform: capitalize;
+}
+
+@media (min-width: 810px) {
+  .hero-tags-container {
+    display: flex;
+    width: 100%;
+  }
+}
